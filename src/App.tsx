@@ -1,13 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import GlobalStyles from "./Styles/global";
+import { EntidadeProvider } from "./Hooks/EntidadeHook";
+import { Routes } from "./Routes/index.routes";
 function App() {
   return (
-    <div className="App">
-            <GlobalStyles />
-     <h1>TESTEE</h1>
-    </div>
+    <EntidadeProvider>
+      <div className="App">
+        <GlobalStyles />
+        <Routes />
+      </div>
+    </EntidadeProvider>
   );
 }
 
