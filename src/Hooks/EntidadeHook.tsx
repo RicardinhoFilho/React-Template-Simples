@@ -26,7 +26,15 @@ import React, {
     const[entidade,setEntidade] = useState({} as IEntidade);
     const[token,setToken] = useState(false as boolean | string);
 
-
+    async function login(usuario:string,senha:string) {
+            try {
+                
+            } catch (error) {
+                
+            }finally{
+                
+            }
+    }
 
     return (
       <EntidadeContext.Provider
