@@ -9,9 +9,12 @@ import {
 import { Form } from "./styles";
 import Logo from "../../Assets/Logo.png";
 import { sinsoft_url } from "../../Utils/Urls";
+import { useEntidade } from "../../Hooks/EntidadeHook";
 export const Login = () => {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
+
+  const {login} = useEntidade();
 
   return (
     <Container>

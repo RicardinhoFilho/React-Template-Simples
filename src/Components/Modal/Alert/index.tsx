@@ -21,7 +21,7 @@ const customStyles = {
 interface Props {
   open: boolean;
   onClose(): void;
-  alert: { title: string; message: string };
+  alert: { titulo: string; mensagem: string };
 }
 export const Alert = ({ open, onClose, alert }: Props) => {
   return (
@@ -36,9 +36,9 @@ export const Alert = ({ open, onClose, alert }: Props) => {
           />
         </DivX>
 
-        <Title>{alert.title}</Title>
+        <Title>{alert.titulo}</Title>
 
-        <Message>{alert.message}</Message>
+        <Message>{alert.mensagem}</Message>
       </Container>
     </Modal>
   );
